@@ -1,5 +1,50 @@
-# Vue 3 + TypeScript + Vite
+# 前端工程说明（web）
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+本目录是“城市交通事故预警系统”前端，技术栈：
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+- Vue 3
+- TypeScript
+- Vite
+- Element Plus
+- ECharts
+- Three.js
+
+## 运行
+
+```bash
+npm install
+npm run dev
+```
+
+默认地址：`http://localhost:5173`
+
+## 环境变量
+
+复制或参考 `.env.example`：
+
+```bash
+VITE_API_BASE=http://localhost:8080
+```
+
+## 打包
+
+```bash
+npm run build
+```
+
+## 页面模块
+
+- 首页驾驶舱
+- 事故管理
+- 地图分析（二维）
+- 预警中心
+- 统计报表
+- 三维风险态势
+- 智能能力
+- 管理员配置
+- 字典管理
+
+## 说明
+
+- 页面文案已统一中文化（含状态、风险等级、角色等枚举映射）。
+- 业务接口遵循项目约束，仅调用后端 `GET/POST` 接口。
