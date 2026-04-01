@@ -1,0 +1,30 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Java / Maven
+server/target/
+**/target/
+
+# Node / Vite
+web/node_modules/
+web/dist/
+web/dist-ssr/
+node_modules/
+dist/
+
+# Temp
+tmp/
+.cache/
